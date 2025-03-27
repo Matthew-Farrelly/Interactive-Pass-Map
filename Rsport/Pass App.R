@@ -3,8 +3,9 @@
 #Data made public by Metrica Sports -  https://github.com/metrica-sports/sample-datas
 #'events-definitions' file in 'documentation' folder for explanation of Event Types and Subtypes variables.
 
-setwd("C:/Users/mazza/OneDrive/Documents/Rsport")
-#Packages
+#setwd()
+
+        #Packages
 #install.packages("shiny")
 #install.packages("dplyr")
 #install.packages("ggsoccer")
@@ -100,7 +101,7 @@ server <- function(input, output, session) {
   
   #text
   output$selected_var <- renderText({
-    paste("Viewing", input$sel_Game, "- Player", input$sel_Player)
+    paste("Viewing", input$sel_Game, ": Player", input$sel_Player)
   })
 }
 ui <- fluidPage(
