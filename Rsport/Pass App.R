@@ -79,7 +79,7 @@ server <- function(input, output, session) {
                      fill   = "springgreen4",
                      limits = FALSE) +
       geom_segment(aes(x = x1, y = y1, xend = x2, yend = y2, colour = Pass_Direction),
-                   arrow = arrow(length = unit(0.15, "cm"),
+                   arrow = arrow(length = unit(0.25, "cm"),
                                  type = "closed")) +
       theme_pitch() +
       theme(panel.background = element_rect(fill = "springgreen4")) +
